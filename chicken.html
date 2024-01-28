@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&family=Amatic+SC:wght@400;700&family=Inter:wght@100;200;300&family=Montserrat:wght@100;200;300;400;500;600&family=Open+Sans:wght@300;400;500;600&family=Pacifico&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/css2/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+    
+
+
+
+       
+    
+
+ 
+ <body >
+
+<div class="side-nav-menu min-vh-100 position-fixed bg-black d-flex top-0" style="left: 0px;">
+        <div class="nav-tab  d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden">
+                    <a href="search.html" class="nav-link py-2 position-relative cursor-pointer text-light" style="top: 0px;">Search</a>
+                    <a href="index.html" class="nav-link py-2 position-relative cursor-pointer text-light" style="top: 0px;">Categories</a>
+                    <a href="area.html" class="nav-link py-2 position-relative cursor-pointer text-light" style="top: 0px;">Area</a>
+                    <a href="ingredient.html" class="nav-link py-2 position-relative cursor-pointer text-light" style="top: 0px;">Ingredients</a>
+                    <a href="contact.html" class="nav-link py-2 position-relative cursor-pointer text-light" style="top: 0px;">Contact Us</a>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook text-light"></i>
+                    <i class="fa-brands fa-twitter text-light"></i>
+                    <i class="fa-solid fa-globe text-light"></i>
+                </div>
+                <div class="footer text-light">
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+            <img class="logo" src="logo.png" alt="" srcset="">
+            <i class="fa-solid open-close-icon fa-2x fa-align-justify"></i>
+            <div>
+                <i class="fa-solid fa-globe d-block text-dark"></i>
+                <i class="fa-solid fa-share-nodes text-dark "></i>
+            </div>
+        </div>
+    </div>
+    <div class="min-vh-100 position-relative">
+        <div class="inner-loading-screen top-0 start-0 end-0 bottom-0 justify-content-center align-items-center" style="display: none;">
+            <i class="fa fa-spinner fa-spin fa-5x"></i>
+        </div>
+        
+    
+        
+        
+       
+        <div class="abc">
+            <div class="container">
+                <div class="row gy-4" id="body"><div class="col-md-3">
+                    <div onclick="getMealDetails('1')" class="meal position-relative overflow-hidden rounded-2 cursor-pointer">
+                        <img class="w-100" src="https://www.themealdb.com/images/category/beef.png" alt="" srcset="">
+                        <div class="meal-layer position-absolute d-flex align-items-center text-black p-2 " id="mama">
+                           <h3 class="ctm">Beef</h3>  
+                           
+                        </div>
+                      </div>
+                     </div><div class="col-md-3">
+                    <div onclick="getMealDetails('2')" class="meal position-relative overflow-hidden rounded-2 cursor-pointer">
+                        <img class="w-100" src="https://www.themealdb.com/images/category/chicken.png" alt="" srcset="">
+                        <div class="meal-layer position-absolute d-flex align-items-center text-black p-2 " id="mama">
+                           <h3 class="ctm">Chicken</h3>  
+                           
+                        </div>
+                      </div>
+                     </div><div class="col-md-3">
+                    <div onclick="getMealDetails('3')" class="meal position-relative overflow-hidden rounded-2 cursor-pointer">
+                        <img class="w-100" src="https://www.themealdb.com/images/category/dessert.png" alt="" srcset="">
+                        <div class="meal-layer position-absolute d-flex align-items-center text-black p-2 " id="mama">
+                           <h3 class="ctm">Dessert</h3>  
+                           
+                        </div>
+                      </div>
+                     </div><div class="col-md-3">
+                    <div onclick="getMealDetails('4')" class="meal position-relative overflow-hidden rounded-2 cursor-pointer">
+                        <img class="w-100" src="https://www.themealdb.com/images/category/lamb.png" alt="" srcset="">
+                        <div class="meal-layer position-absolute d-flex align-items-center text-black p-2 " id="mama">
+                           <h3 class="ctm">Lamb</h3>  
+                           
+                        </div>
+                      </div>
+                     </div><div class="col-md-3">
+                    <div onclick="getMealDetails('5')" class="meal position-relative overflow-hidden rounded-2 cursor-pointer">
+                        <img class="w-100" src="https://www.themealdb.com/images/category/miscellaneous.png" alt="" srcset="">
+                        <div class="meal-layer position-absolute d-flex align-items-center text-black p-2 " id="mama">
+                           <h3 class="ctm">Miscellaneous</h3>  
+                           
+                        </div>
+                      </div>
+                     </div><div class="col-md-3">
+                    <div onclick="getMealDetails('6')" class="meal position-relative overflow-hidden rounded-2 cursor-pointer">
+                        <img class="w-100" src="https://www.themealdb.com/images/category/pasta.png" alt="" srcset="">
+                        <div class="meal-layer position-absolute d-flex align-items-center text-black p-2 " id="mama">
+                           <h3 class="ctm">Pasta</h3>  
+                           
+                        </div>
+                      </div>
+                     </div><div class="col-md-3">
+                    <div onclick="getMealDetails('7')" class="meal position-relative overflow-hidden rounded-2 cursor-pointer">
+                        <img class="w-100" src="https://www.themealdb.com/images/category/pork.png" alt="" srcset="">
+                        <div class="meal-layer position-absolute d-flex align-items-center text-black p-2 " id="mama">
+                           <h3 class="ctm">Pork</h3>  
+                           
+                        </div>
+                      </div>
+                     </div><div class="col-md-3">
+                    <div onclick="getMealDetails('8')" class="meal position-relative overflow-hidden rounded-2 cursor-pointer">
+                        <img class="w-100" src="https://www.themealdb.com/images/category/seafood.png" alt="" srcset="">
+                        <div class="meal-layer position-absolute d-flex align-items-center text-black p-2 " id="mama">
+                           <h3 class="ctm">Seafood</h3>  
+                           
+                        </div>
+                      </div>
+                     </div><div class="col-md-3">
+                    <div onclick="getMealDetails('9')" class="meal position-relative overflow-hidden rounded-2 cursor-pointer">
+                        <img class="w-100" src="https://www.themealdb.com/images/category/side.png" alt="" srcset="">
+                        <div class="meal-layer position-absolute d-flex align-items-center text-black p-2 " id="mama">
+                           <h3 class="ctm">Side</h3>  
+                           
+                        </div>
+                      </div>
+                     </div><div class="col-md-3">
+                    <div onclick="getMealDetails('10')" class="meal position-relative overflow-hidden rounded-2 cursor-pointer">
+                        <img class="w-100" src="https://www.themealdb.com/images/category/starter.png" alt="" srcset="">
+                        <div class="meal-layer position-absolute d-flex align-items-center text-black p-2 " id="mama">
+                           <h3 class="ctm">Starter</h3>  
+                           
+                        </div>
+                      </div>
+                     </div><div class="col-md-3">
+                    <div onclick="getMealDetails('11')" class="meal position-relative overflow-hidden rounded-2 cursor-pointer">
+                        <img class="w-100" src="https://www.themealdb.com/images/category/vegan.png" alt="" srcset="">
+                        <div class="meal-layer position-absolute d-flex align-items-center text-black p-2 " id="mama">
+                           <h3 class="ctm">Vegan</h3>  
+                           
+                        </div>
+                      </div>
+                     </div><div class="col-md-3">
+                    <div onclick="getMealDetails('12')" class="meal position-relative overflow-hidden rounded-2 cursor-pointer">
+                        <img class="w-100" src="https://www.themealdb.com/images/category/vegetarian.png" alt="" srcset="">
+                        <div class="meal-layer position-absolute d-flex align-items-center text-black p-2 " id="mama">
+                           <h3 class="ctm">Vegetarian</h3>  
+                           
+                        </div>
+                      </div>
+                     </div><div class="col-md-3">
+                    <div onclick="getMealDetails('13')" class="meal position-relative overflow-hidden rounded-2 cursor-pointer">
+                        <img class="w-100" src="https://www.themealdb.com/images/category/breakfast.png" alt="" srcset="">
+                        <div class="meal-layer position-absolute d-flex align-items-center text-black p-2 " id="mama">
+                           <h3 class="ctm">Breakfast</h3>  
+                           
+                        </div>
+                      </div>
+                     </div><div class="col-md-3">
+                    <div onclick="getMealDetails('14')" class="meal position-relative overflow-hidden rounded-2 cursor-pointer">
+                        <img class="w-100" src="https://www.themealdb.com/images/category/goat.png" alt="" srcset="">
+                        <div class="meal-layer position-absolute d-flex align-items-center text-black p-2 " id="mama">
+                           <h3 class="ctm">Goat</h3>  
+                           
+                        </div>
+                      </div>
+                     </div></div>
+    
+    
+  
+        </div>
+        </div>
+        </div>
+    </div>
